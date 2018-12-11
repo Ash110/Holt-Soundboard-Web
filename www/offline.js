@@ -119,7 +119,7 @@ $(document).ready(function(){
             'newSounds/Yes.mp3',
             'newSounds/You call that, dancing.mp3',
             "newSounds/You're not Cheddar.mp3",
-            'newSounds/Zero interest in food.mp3',
+            'newSounds/Zero interest in food.mp3'
         ]
     });
 });
