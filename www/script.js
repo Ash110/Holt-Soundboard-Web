@@ -4,9 +4,7 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
-    navigator.serviceWorker && navigator.serviceWorker.register('sw.js').then(function(registration) {
-        console.log('Excellent, registered with scope: ', registration.scope);
-    });
+    if ('serviceWorker' in navigator) { // register service worker navigator.serviceWorker.register('/service-worker.js'); }
     var v = (window.localStorage.key(0), window.localStorage.getItem("Holt-fav"));
     if (v!==""){
         fav_sounds=new Array(e);
