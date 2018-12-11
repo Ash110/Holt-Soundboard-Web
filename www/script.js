@@ -4,7 +4,8 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
-    if ('serviceWorker' in navigator) { // register service worker navigator.serviceWorker.register('/service-worker.js'); 
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js'); 
     }
     var v = (window.localStorage.key(0), window.localStorage.getItem("Holt-fav"));
     if (v!==""){
