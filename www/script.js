@@ -72,16 +72,17 @@ $(document).ready(function() {
         $('.modal').modal('open');
     }
     $(".col-4").click(function(){
-            var texto = String($(this).text().trim());
-            texto=texto.substring(0,texto.indexOf('?'))+texto.substring(texto.indexOf('?')+1,texto.len);
-            if(currentAudio!==0)
-                currentAudio.pause();
-            currentAudio = document.createElement('audio');
-            currentAudio.setAttribute('class','holt-speak');
-            var fileName=String("newSounds/"+texto+".mp3");
-            currentAudio.setAttribute('src', fileName);
-            currentAudio.setAttribute('autoplay', 'autoplay');
-            currentAudio.play();
+        var texto = String($(this).text().trim());
+        texto=texto.substring(0,texto.indexOf('?'))+texto.substring(texto.indexOf('?')+1,texto.len);
+        if(currentAudio!==0)
+            currentAudio.pause();
+        currentAudio = document.createElement('audio');
+        currentAudio.setAttribute('class','holt-speak');
+        var fileName=String("newSounds/"+texto+".mp3");
+        currentAudio.setAttribute('src', fileName);
+        currentAudio.setAttribute('autoplay', 'autoplay');
+        currentAudio.play();
+        
     });
    
     $("#last_name").on('input', function(){
