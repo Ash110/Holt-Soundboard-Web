@@ -49,7 +49,7 @@ self.addEventListener('install', function(e) {
 		'https://soundboards.xyz/www/temp.txt',
 		'https://soundboards.xyz/www/upup.min.js',
 		'https://soundboards.xyz/www/upup.sw.min.js',
-		 'https://soundboards.xyz/www/newSounds/Bingpot!.mp3',
+		'https://soundboards.xyz/www/newSounds/Bingpot!.mp3',
 		'https://soundboards.xyz/www/newSounds/Bold Personality.mp3',
 		'https://soundboards.xyz/www/newSounds/Bone!.mp3',
 		'https://soundboards.xyz/www/newSounds/Boooone!.mp3',
