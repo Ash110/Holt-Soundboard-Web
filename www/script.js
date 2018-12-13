@@ -63,10 +63,10 @@ $(document).ready(function() {
     $(".goback2").click(function(){
         window.location.href ="index.html";
     });
-    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-update-07-11-18"));
+    var e = (window.localStorage.key(0), window.localStorage.getItem("Holt-New"));
     if (e=="done");
     else {
-        window.localStorage.setItem("Holt-update-07-11-18", "done");
+        window.localStorage.setItem("Holt-New", "done");
         $('.modal').modal('open');
     }
     $(".col-4").click(function(){
