@@ -1,5 +1,3 @@
-importScripts('polyfill.js');
-
 
 self.addEventListener('install', function(e) {
  e.waitUntil(
@@ -30,8 +28,8 @@ self.addEventListener('install', function(e) {
             'favicon-32x32.png',
             'favicon.ico',
             'index.html',
-		 	'/index.html?homescreen=1',
-       		'/?homescreen=1',
+		 	'index.html?homescreen=1',
+       		'?homescreen=1',
             'index2.html',
             'index3.html',
             'jquery-2.2.4.min.js',
