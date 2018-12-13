@@ -17,8 +17,6 @@
     <title>Holt Soundboard</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
 	
-    <script src="upup.min.js"></script>
-    <script src="offline.js"></script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
@@ -40,7 +38,7 @@
                     menu
                 </i>
             </a> 
-			Holt Soundboard
+			Holt Soundboard back to testing
 		</div>
 	</div>
 	
@@ -178,5 +176,12 @@
     	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
 		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
   	</ul>
+	<script>
+		if('serviceWorker' in navigator) {
+  			navigator.serviceWorker
+           		.register('/sw.js')
+           		.then(function() { alert("Service Worker Registered"); });
+		}
+	</script>
 </body>
 </html>
