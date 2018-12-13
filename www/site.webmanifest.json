@@ -15,6 +15,6 @@
     ],
     "theme_color": "#ffe93e",
     "background_color": "#ffffff",
-    "start_url": "https://soundboards.xyz/www/index.html",
+    "start_url": "/",
     "display": "standalone"
 }
