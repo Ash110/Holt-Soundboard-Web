@@ -26,7 +26,7 @@ self.addEventListener('install', function(e) {
             'favicon-16x16.png',
             'favicon-32x32.png',
             'favicon.ico',
-            'index.html',
+            'https://soundboards.xyz/www/index.html',
             'index2.html',
             'index3.html',
             'jquery-2.2.4.min.js',
