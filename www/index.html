@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
-<script src="jquery-2.2.4.min.js"></script>
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-<meta name="apple-mobile-web-app-title" content="Holt Soundboard">
-<meta name="application-name" content="Holt Soundboard">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-
     <title>Holt Soundboard</title>
     <link rel="icon" href="favicon.ico" type="image/ico">
-	<script src="upup.min.js"></script>
-	<script src="offline.js"></script>
+    <link rel="manifest" href="manifest.json" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    
+    <script src="jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize.min.css">
@@ -38,23 +24,27 @@
                 <i class="material-icons" id="menuToggle">
                     menu
                 </i>
-            </a> 
+            </a>
 			Holt Soundboard
 		</div>
 	</div>
 	
     <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4 style="color: orangered;">IMPORTANT</h4>
-        <h6>Thanks for trying out the Holt Soundboard! It's important that you are online the first time you try this app. You can add this app to your homescreen and try it offline, but you need to be online the first time you use it. All sounds work online the first time, might work offline from the second time after you've added it to your homepage</h6>
-        <p>Thanks for trying out the app. You can contact me through the request quotes page. Do consider supporting development of this app, which will remain ad-free.</p>
+        <h4>Changelog</h4>
+        <p>Here's what's new in this update for the best Holt Soundboard app - </p>
+        <ol>
+			<li>Some bugs have been fixed</li>
+			<li>More bugs have been added to fix later</li>
+			<li>New sounds like - Case, Halloween and Kwazy Cupcakes!</li>
+        </ol>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Continue</a>
     </div>
   </div>
 	
-    <div class="container">
+    <div class="container animated">
         <div class="row">
 			<div class="first-div col-4 animated waves-effect waves-dark">Hot Damn!</div>
             <div class="second-div col-4 animated waves-effect waves-dark">Get Some</div>
@@ -146,6 +136,11 @@
 			<img src="Brooklyn-Nine-Nine.jpg">
 		</li>
         <li>
+			<a href="favs.html" class="side-items">
+				<i class="material-icons" style="color:#ffc371;">star</i>&nbsp;&nbsp;Favourites
+			</a>
+		</li>
+        <li>
 			<a href="contact.html" class="side-items">
 				<i class="material-icons" style="color:#71adff;">input</i>&nbsp;&nbsp;Request Quotes
 			</a>
@@ -177,12 +172,8 @@
     	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
 		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
   	</ul>
-	<script>
-		if('serviceWorker' in navigator) {
-  			navigator.serviceWorker
-           		.register('sw.js')
-           		.then(function() { console.log("Service Worker Registered"); });
-		}
-	</script>
+    <footer class="holt-footer">
+        <p>Long press any of the buttons to add to favourite</p>      
+    </footer>
 </body>
 </html>
