@@ -4,10 +4,12 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="jquery-2.2.4.min.js"></script>
+    <script src="konva.js"></script>
     <script type="text/javascript" src="materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="countdown.js"></script>
     <script src="script.js"></script>
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <script src="xdk/init-dev.js"></script>
@@ -15,41 +17,12 @@
 <body>
     <div class="header" style="display:table;">
         <div style="display:table-cell; vertical-align:middle;">
-            Contact Me
+            It's the Final Countdown!
             <a href="#" data-target="slide-out" class="sidenav-trigger">
                 <i class="material-icons" id="menuToggle">
                     menu
                 </i>
             </a>
-        </div>
-    </div>
-    <div class="main-cards">
-        <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Write a Mail</span>
-                <p>Write to me by mail. I will make sure it ends up in Spam.</p>
-            </div> 
-            <div class="card-action">
-                <p style="color:white;">albaneinc@gmail.com</p>
-            </div>
-        </div>
-        <div class="card blue darken-1">
-            <div class="card-content white-text">
-                <span class="card-title">Tweet to me</span>
-                <p>Probably the fastest way to contact me.</p>
-            </div> 
-            <div class="card-action">
-                <a href="#" onclick="window.open('https://twitter.com/Ashwin_110', '_system'); return false;">Tweet to me directly</a>
-            </div>
-        </div>
-        <div class="card orange darken-3">
-            <div class="card-content white-text">
-                <span class="card-title">Reddit DMs</span>
-                <p>Thanks to reddit for the ideas on the sound tracks.</p>
-            </div> 
-            <div class="card-action">
-                <a href="#"onclick="window.open('https://www.reddit.com/user/Ashwin110', '_system'); return false;">Reddit Profile</a>
-            </div>
         </div>
     </div>
     <ul id="slide-out" class="sidenav" class="side-items">
@@ -88,5 +61,12 @@
     	<li class="dark-mode"><a href="#!"><i class="material-icons" style="color:black;">brightness_2</i>&nbsp;Dark Mode</a></li>
 		<li class="amoled-mode"><a href="#!"><i class="material-icons" style="color:black;">phone_android</i>&nbsp;AMOLED Mode</a></li>
   	</ul>
+    <h4 class="time-head">Season 6 starts in :</h4>
+    <!--<canvas id="myCanvas" style="position:absolute;top:20%;"></canvas>
+    <button onclick="mySavingFunction()" style="position:absolute;bottom:20%;">Save my canvas!</button>-->
+    <div class="countdown">
+        <h1 class="countdown-days">Soon</h1>
+        <h4 class="the-text-days">DAYS</h4>
+    </div>
 </body>
 </html>
