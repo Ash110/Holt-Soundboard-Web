@@ -91,7 +91,7 @@ $(document).ready(function() {
             currentAudio.pause();
         currentAudio = document.createElement('audio');
         currentAudio.setAttribute('class','holt-speak');
-        var fileName=String("newSounds/"+texto+".ogg");
+        var fileName=String("newSounds/"+texto+".mp3");
         currentAudio.setAttribute('src', fileName);
         currentAudio.setAttribute('autoplay', 'autoplay');
         currentAudio.play();        
