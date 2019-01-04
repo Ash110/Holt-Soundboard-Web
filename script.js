@@ -4,6 +4,7 @@ function makeEverythingAppear(boxes)
         boxes[i].style.display="block";
 }
 $(document).ready(function() {
+	$('.modal').modal();
 	function getOS() {
   		var userAgent = window.navigator.userAgent,
       		platform = window.navigator.platform,
@@ -84,7 +85,7 @@ $(document).ready(function() {
         titles.push(boxes[i].innerHTML.toLowerCase());
     }
     $('.dropdown-trigger').dropdown();
-    $('.modal').modal();
+    
     $('.sidenav').sidenav();
     $('.collapsible').collapsible();
     $(".goback2").click(function(){
