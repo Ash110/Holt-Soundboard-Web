@@ -25,7 +25,7 @@ $(document).ready(function() {
 		  return os;
 	}
 	var userOS = getOS();
-	alert(getOS);
+	alert(getOS());
 	if(userOS==="Android"){
 		$("#modal2").modal('open');
 	}
