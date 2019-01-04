@@ -53,9 +53,23 @@ footer{
 	box-shadow: #b9b9b9 0px 2px 15px;
 	vertical-align: middle;
 }
+.go-to-chat{
+	position: absolute;
+    top: 9%;
+    left: 0%;
+    width: 100%;
+    height: 4%;
+    background-color: #e53935;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    font-family: google;
+	box-shadow: #b9b9b9 0px 2px 15px;
+	vertical-align: middle;
+}
 .container{
 	position: absolute;
-	top: 11%;
+	top: 17%;
 }
 .search-bar{
 	position: fixed;
