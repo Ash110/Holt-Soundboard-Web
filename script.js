@@ -26,7 +26,7 @@ $(document).ready(function() {
 	}
 	var userOS = getOS();
 	if(userOS==="Android"){
-		
+		$("#modal2").modal('open');
 	}
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js')
